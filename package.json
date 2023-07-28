@@ -1,0 +1,36 @@
+{
+    "name": "changebuild",
+    "version": "1.0.0",
+    "description": "Github Change Builder",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "webpack --mode production"
+    },
+    "author": "Mikhail Matveev <xtreme@rh1.ru>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/code-frame": "^7.22.5",
+        "@babel/core": "^7.22.9",
+        "@babel/eslint-parser": "^7.22.9",
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+        "@babel/plugin-transform-async-to-generator": "^7.22.5",
+        "@babel/plugin-transform-runtime": "^7.22.9",
+        "@babel/preset-env": "^7.22.9",
+        "@babel/runtime": "^7.22.6",
+        "babel-loader": "^9.1.3",
+        "eslint": "^8.45.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-webpack-plugin": "^4.0.1",
+        "terser-webpack-plugin": "^5.3.9",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "command-line-args": "^5.2.1",
+        "date-fns": "^2.30.0",
+        "fs-extra": "^11.1.1",
+        "semver": "^7.5.4"
+    }
+}
