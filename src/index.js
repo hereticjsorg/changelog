@@ -76,7 +76,7 @@ const {
             output += "| Author | Date | Message |\n| -- | -- | -- |\n";
             for (const item of commits) {
                 const author = `${item.commit.author.name}<br/>${item.commit.author.email}`;
-                const message = item.commit.message.replace("\n", "<br/>");
+                const message = item.commit.message.replace(/\n\n/gm, "<br/>").replace(/\n/gm, "<br/>");
                 const date = new Date(item.commit.author.date);
                 output += `| ${author} | ${format(date, "yyyy-MM-dd")} | ${message} |\n`;
             }
